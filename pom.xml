@@ -434,13 +434,13 @@
                 <configuration>
                     <schemaVersion>v2</schemaVersion>
                     <resourceGroup>xteam-rg</resourceGroup>
-                    <appName>xteam-gateway</appName>
+                    <appName>xteamGateway</appName>
                     <runtime>
                         <os>Linux</os>
-                        <javaVersion>java11</javaVersion>
+                        <javaVersion>java8</javaVersion>
                     </runtime>
-                    <pricingTier>B1</pricingTier>
-                    <region>France Central</region>
+                    <pricingTier>P1v2</pricingTier>
+                    <region>North Europe</region>
                     <deployment>
                         <resources>
                             <resource>
