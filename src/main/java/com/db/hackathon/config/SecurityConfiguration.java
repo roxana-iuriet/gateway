@@ -42,7 +42,8 @@ public class SecurityConfiguration extends ResourceServerConfigurerAdapter {
             .ignoringAntMatchers("/h2-console/**")
             .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
         .and()
-            .addFilterBefore(corsFilter, CsrfFilter.class)
+            //.addFilterBefore(corsFilter, CsrfFilter.class)
+            .csrf().disable()
             .headers()
             .frameOptions()
             .disable()
@@ -52,6 +53,8 @@ public class SecurityConfiguration extends ResourceServerConfigurerAdapter {
         .and()
             .authorizeRequests()
             .antMatchers("/api/**").authenticated()
+            .antMatchers("/auth/login").permitAll()
+
             .antMatchers("/management/health").permitAll()
             .antMatchers("/management/info").permitAll()
             .antMatchers("/management/prometheus").permitAll()
