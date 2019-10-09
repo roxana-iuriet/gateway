@@ -38,12 +38,11 @@ spring:
       enabled: false
     livereload:
       enabled: false
-  data:
-    mongodb:
-      #  mongodb+srv://huser:Hackaton2019@cluster0-eagup.azure.mongodb.net/admin?retryWrites=true&w=majority
-      uri: mongodb://hackathonuser:ZrWWtIFHn7ws9nGDO9nnD2ysgXmXi9qawpiQiO7N5c0Fd8GCpmO1j5xRAJm7lfmoJM6xdiS0ECNyg2X6EyegAg==@hackathonuser.documents.azure.com:10255/?ssl=true&replicaSet=globaldb
-      database: gateway
-      port: 80
+    data:
+      mongodb:
+        uri: mongodb://hackathonuser:ZrWWtIFHn7ws9nGDO9nnD2ysgXmXi9qawpiQiO7N5c0Fd8GCpmO1j5xRAJm7lfmoJM6xdiS0ECNyg2X6EyegAg==@hackathonuser.documents.azure.com:10255/?ssl=true&replicaSet=globaldb
+        database: gateway
+        port: 80
   mail:
     host: localhost
     port: 25
